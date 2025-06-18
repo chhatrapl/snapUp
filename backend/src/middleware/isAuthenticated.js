@@ -22,6 +22,6 @@ export const isAuthenticated = async (req, res, next) => {
          next()
 
     } catch (error) {
-        return res.status(500).json({success:false, message:"somthing went wrong is Authorization!"})
+        return res.status(500).json({success:false, message:"somthing went wrong in Authorization!",error})
     }
 }

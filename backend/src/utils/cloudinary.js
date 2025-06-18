@@ -20,6 +20,7 @@ dotenv.config();
             resource_type:"auto"
         })
         console.log("file uploaded to cloudinary",uploaded.url)
+        console.log(LocalFilePath);
         await fs.promises.unlink(LocalFilePath);
 
         return uploaded
