@@ -9,7 +9,7 @@ import { genrateAccessTokenAndRefreshToken } from "../utils/genrateAccessTokenAn
 
 
 
-export const signup = async(req, res)=>{
+export const signup = async (req, res)=>{
 
 const {fullName, userName, mobileNumber, password, profilePic } = req.body;
 
@@ -107,7 +107,7 @@ try {
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-export const login = async(req, res) => {
+export const login = async (req, res) => {
 
  try {
    const {mobileNumber, userName, password} = req.body;
