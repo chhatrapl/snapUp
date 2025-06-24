@@ -95,4 +95,4 @@ export const editPost = async (req, res) =>{
   } catch (error) {
       return res.status(500).json({success:false, message:"somthing went wrong!", error});
       }
-   };
+};
