@@ -4,6 +4,7 @@ import userRouter from "./routes/user.route.js";
 import postRouter from "./routes/post.route.js";
 import followrouter from "./routes/follow.route.js";
 import profilerouter from "./routes/profile.route.js";
+import feedRouter from "./routes/feed.route.js";
 const app = express();
 
 
@@ -16,6 +17,7 @@ app.use("/api/v1/users",userRouter);
 app.use("/api/v1/posts",postRouter);
 app.use("/api/v1/follow",followrouter);
 app.use("/api/v1/profile",profilerouter);
+app.use("/api/v1/getfeed",feedRouter);
 
 
 
